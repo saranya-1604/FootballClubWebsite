@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VSB FOOTBALL CLUB</title>
+<style>
+    /* Reset styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Body styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    /* Navigation styles */
+    nav {
+        background-color: #555;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0 15px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    /* Main content styles */
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+        color: #333;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+
+    /* Box structure */
+    .box {
+        border: 2px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9; /* Background color for boxes */
+    }
+
+    /* Category-specific styles */
+    .admin {
+        border-color: #007bff; /* Blue border for Admin */
+    }
+
+    .player {
+        border-color: #28a745; /* Green border for Player */
+    }
+
+    .user {
+        border-color: #dc3545; /* Red border for User */
+    }
+
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>VSB FOOTBALL CLUB</h1>
+    </header>
+    <nav>
+      
+        <a href="AddMatch">Add Match Details</a>
+        <a href="AddPlayerForm">Add Player</a>
+        <a href="MatchDetails.jsp">View Upcoming Matches</a>
+        <a href="RegisterForMatch">Register for Match</a>
+        <a href="BookTicket.jsp">Book Tickets</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to VSB Football Club</h2>
+        <div class="box admin">
+            <h3>Admin</h3>
+            <p>Manage match details and player registrations.</p>
+            <ul>
+                <li><a href="AddMatch">Add Match Details</a></li>
+                <li><a href="AddPlayerForm">Add Player</a></li>
+            </ul>
+        </div>
+        <div class="box player">
+            <h3>Player</h3>
+            <p>View upcoming matches and register for matches.</p>
+            <ul>
+                <li><a href="MatchDetails.jsp">View Upcoming Matches</a></li>
+                <li><a href="RegisterForMatch">Register for Match</a></li>
+            </ul>
+        </div>
+        <div class="box user">
+            <h3>User</h3>
+            <p>Book tickets for upcoming matches.</p>
+            <ul>
+                <li><a href="MatchDetails.jsp">View Upcoming Matches</a></li>
+                <li><a href="BookTicket.jsp">Book Tickets</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 VSB FOOTBALL CLUB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
